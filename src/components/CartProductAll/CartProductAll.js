@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './CartProductAll.css'
 import data from './data'
 import CartProduct from '../CartProduct/CartProduct'
-export default function () {
+export default () => {
     const [items, setItems] = useState(2)
     const handleOnclick = () => {
         setItems(items + items)
