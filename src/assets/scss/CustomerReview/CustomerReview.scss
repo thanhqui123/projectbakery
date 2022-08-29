@@ -1,0 +1,22 @@
+.customer-review{
+    &-wrapper{
+        display: flex;
+    }
+
+    &__avatar{
+        width: 55px;
+        height: 55px;
+        border-radius: 100px;
+        border: 2px solid rgb(161, 161, 161);
+        background-size: contain!important;
+    }
+
+    &__content{
+        margin-top: 8px;
+        margin-left: 20px;
+        &--review{
+            font-size: 15px;
+            color: #767676;
+        }
+    }
+}

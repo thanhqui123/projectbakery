@@ -1,0 +1,110 @@
+@mixin label-review{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@mixin input-name-and-email{
+    margin-top: 8px;
+    width: 90%;
+    height: 48px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 8px;
+}
+
+.add-review{
+    &--title{
+        font-size: 21px;
+        font-weight: 500;
+        margin-top: 35px;
+    }
+    &--divider{
+        width: 95%;
+        height: 1px;
+        background-color: rgb(221, 221, 221);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &__form{
+        &--commit{
+            font-size: 14px;
+            color: #5A5A5A;
+        }
+        &-rating{
+            margin-top: 30px;
+            &--label{
+                @include label-review()
+            }
+        }
+        &-text-area{
+            margin-top: 30px;
+            & textarea{
+                border: 1px solid black;
+                outline: none;
+                margin-top: 10px;
+                padding: 16px 20px;
+                box-sizing: border-box;
+                width: 95%;
+                height: 230px;
+                border-radius: 8px;
+            }
+
+            &--label{
+                @include label-review()
+            }
+        }
+
+    
+        &-name-and-email{
+            display: flex;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        &-name{
+            flex: 1;
+            &--label{
+                @include label-review()
+            }
+            & input{
+                @include input-name-and-email()
+            }
+        }
+
+        &-email{
+            flex: 1;
+            &--label{
+                @include label-review()
+            }
+            & input{
+                @include input-name-and-email();
+            }
+        }
+    }
+
+    &__save-name-and-email{
+        margin-top: 20px;
+
+        & span{
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+
+    &__button-submit{
+        background-color: #212121;
+        color: white;
+        padding: 14px 30px;
+        width: 52px;
+        border-radius: 6px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+    &__button-submit:hover{
+        background-color: #433d3d;
+    }
+}

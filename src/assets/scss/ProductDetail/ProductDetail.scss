@@ -1,3 +1,72 @@
-.body{
-    
+.product-detail{
+    &__related-product{
+        margin-top: 40px;
+    }
+     padding: 20px 60px;
+     &__breadcrump{
+        &--title{
+            font-size: 14px;
+            color: #5A5A5A;
+            & span{
+                color: black;
+                font-weight: 500;
+            }
+        }
+    }
+    &--title{
+        margin-top: 35px;
+        font-size: 26px;
+        font-weight: 500;
+    }
+    &--day-pricing{
+        font-size: 16px;
+        margin-top: 18px;
+        & span{
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+    }
+    &__main-container{
+        display: flex;
+    }  
+    &__description{
+        margin-top: 20px;
+        &-content{
+            margin-top: 30px;
+        }
+        &-option ul{
+            list-style-type: none;
+            & li{
+                display: inline-block;
+                font-size: 18px;
+                padding: 3px 0;
+                color: #999999;
+                transition: 50ms;
+                cursor: pointer;
+                
+                &:hover{
+                    color: black;
+                }
+            }
+            & .description-option-active{
+                border-bottom: 2px solid black;
+                color: black;
+            }
+            & li:not(:first-child){
+                margin-left: 20px;
+            }
+
+        }
+       
+    }
+
+  
+}
+.main-container__product-detail-image{
+    flex: 7;
+}
+
+.main-container__right-hot-product{
+    width: 400px;
 }
