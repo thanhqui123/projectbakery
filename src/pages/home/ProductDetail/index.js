@@ -1,9 +1,9 @@
 import '../../../assets/scss/ProductDetail/ProductDetail.scss'
 
-const ProductDetail = () =>{
+const ProductDetail = () => {
     return (
-        <div className = "product-detail">
-
+        <div className="product-detail">
+            
         </div>
     )
 }
