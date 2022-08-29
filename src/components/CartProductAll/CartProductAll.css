@@ -1,0 +1,26 @@
+.cartProductAllItem ul{
+    list-style: none;
+    display: flex;
+    padding: 0 !important;
+}
+.cartProductAllItem li{
+  margin-right: 34px;
+}
+.loadmore button{
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+    color: white;
+    background-color: black;
+    width: 150px;
+    height: 40px;
+    font-size: medium;
+    border-radius: 5%;
+    padding-top: 10px;
+
+    
+}
+.cartProductAllItem{
+    width: 100%;
+    height: 100%;
+}
