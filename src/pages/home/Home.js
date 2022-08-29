@@ -12,7 +12,6 @@ import AdvertisementBox from '../../components/AdvertisementBox/AdvertisementBox
 
 export default function Home() {
     const [openModal, setOpenModal] = useState(true)
-
     return (
         <div className="home">
             <Grid container spacing={2}>
@@ -34,10 +33,7 @@ export default function Home() {
                 </Grid>
             </Grid>
             {openModal && (
-                <AdvertisementBox
-                    closeModal={setOpenModal}
-                    className="boxAdvertisement"
-                />
+                <AdvertisementBox closeModal={setOpenModal} className="boxAdvertisement" />
             )}
         </div>
     )

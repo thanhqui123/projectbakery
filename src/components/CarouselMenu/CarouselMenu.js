@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React from 'react'
 
 // swiper
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -15,12 +15,7 @@ import Cookware from '../../assets/Cookware-1.png'
 export default function CarouselMenu() {
     return (
         <div className="carouselMenu">
-            <Swiper
-                slidesPerView={5}
-                freeMode={true}
-                spaceBetween={30}
-                className="mySwiper"
-            >
+            <Swiper slidesPerView={5} freeMode={true} spaceBetween={30} className="mySwiper">
                 <SwiperSlide className="swiperSlide">
                     <img src={Air} />
                     <span>Air Conditioner</span>
